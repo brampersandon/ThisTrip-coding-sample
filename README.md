@@ -4,6 +4,10 @@ An in-the-moment reference for MetroTransit bus and rail services. This project 
 
 I ended up having a slight emphasis on the backend and data layer of the frontend application.
 
+## Access the Live App
+
+The frontend is hosted on [GitHub Pages](https://skylineproject.github.com/ThisTrip-web). The backend is hosted on [Zeit Now](https://thistrip-api-krfhgewgey.now.sh/). GraphiQL was removed and introspection disabled for production use.
+
 ## Getting Started
 
 The API and frontend are in separate directories (`api` and `frontend` respectively). 
