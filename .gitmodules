@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = git@github.com:skylineproject/ThisTrip-api
+[submodule "web"]
+	path = web
+	url = git@github.com:skylineproject/ThisTrip-web
