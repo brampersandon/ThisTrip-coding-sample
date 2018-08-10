@@ -10,7 +10,7 @@ The frontend is hosted on [GitHub Pages](https://skylineproject.github.com/ThisT
 
 ## Getting Started
 
-The API and frontend are in separate directories (`api` and `frontend` respectively). 
+The API and frontend are in separate directories (`api` and `web` respectively). 
 
 In each of these directories, use `yarn` to install packages, and start the server with `yarn start`.
 
@@ -23,7 +23,7 @@ The project's API is bundled with `parcel`, and makes use of `jest` for testing,
 
 The APIs I used are described on [MetroTransit's API documentation site](http://svc.metrotransit.org/). For certain situations, it was necessary to pre-load or store certain data that MetroTransit does not provide through their API endpoint (instead, this data originates from [a ZIP of CSV files](https://gisdata.mn.gov/dataset/us-mn-state-metc-trans-transit-schedule-google-fd) that is generated weekly, and imported into a Redis cache using the scripts in `api/src/script`). A copy of the data used can be found at `api/src/data/*.csv`.
 
-For testing, I often refer to [this Hacker Noon](https://hackernoon.com/extensive-graphql-testing-57e8760f1c25) article for structural guidance, though generally resolver testing follows a similar approach across projects (whether using apollo-server on Node, `graphql-rails` on Ruby/Rails, or other platforms) in my experience.
+For testing resolvers in particular, I often refer to [this Hacker Noon](https://hackernoon.com/extensive-graphql-testing-57e8760f1c25) article for structural guidance, though generally resolver testing follows a similar approach across projects (whether using apollo-server on Node, `graphql-rails` on Ruby/Rails, or other platforms) in my experience.
 
 ### Frontend
 This project's frontend was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), which provided a solid foundation of bundler configuration and other environmental support, nicely encapsulated in the `react-scripts` package. I quickly removed the generated code, save for `index.js`, which handles the app's initial mounting and rendering.
